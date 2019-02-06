@@ -8,12 +8,13 @@ def draw_line( x0, y0, x1, y1, screen, color ):
     #Octant 1
     d = 2 * A + B
     while x <= x1:
-        plot(x,y)
+        plot(screen,color,x,y)
         if d > 0:
-            y++
+            y+=1
             d += 2 * B
-        x++
+        x+=1
         d += 2*A
     #Octant 2
     
         
+draw_line(0,0,100,80,new_screen(),0)
