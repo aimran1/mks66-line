@@ -7,7 +7,6 @@ def draw_line( x0, y0, x1, y1, screen, color ):
     B = (x1-x0) * -1
     #Octant 1
     if (A >= 0 and x1 - x0 >= A):
-        print("Enter 1")
         d = 2 * A + B
         while x <= x1:
             plot(screen,color,x,y)
@@ -18,7 +17,6 @@ def draw_line( x0, y0, x1, y1, screen, color ):
             d += 2*A
     #Octant 2
     elif (A > 0 and x1 - x0 < A):
-        print("Enter 2")
         d = 2 * B + A
         while y <= y1:
             plot(screen,color,x,y)
@@ -29,7 +27,6 @@ def draw_line( x0, y0, x1, y1, screen, color ):
             d += 2*B
     #Octant 8
     elif (A < 0 and B*-1 >= A *-1):
-        print("Enter 8")
         d = 2 * A - B
         while x <= x1:
             plot(screen,color,x,y)
@@ -40,7 +37,6 @@ def draw_line( x0, y0, x1, y1, screen, color ):
             d -= 2*A
     #Octant 7
     elif (A < 0 and B*-1 < A *-1):
-        print("Enter 7")
         d = 2 * B - A
         while y >= y1:
             plot(screen,color,x,y)
